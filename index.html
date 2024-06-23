@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importância das Tarefas</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+        }
+
+        nav a {
+            margin: 0 1em;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2em;
+            text-align: left; /* Alinhar conteúdo à esquerda */
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para as seções específicas */
+        section {
+            margin-bottom: 2em;
+            background-color: #fff;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        section ul {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        section li {
+            margin-bottom: 0.5em;
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 para vídeos responsivos */
+            margin-top: 1em;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Botões estilizados */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.3em;
+            font-size: 0.9em;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn-secondary {
+            background-color: #008CBA;
+        }
+
+        .btn-secondary:hover {
+            background-color: #005F6B;
+        }
+
+        .btn-tertiary {
+            background-color: #f44336;
+        }
+
+        .btn-tertiary:hover {
+            background-color: #d32f2f;
+        }
+
+        .btn-quaternary {
+            background-color: #9c27b0;
+        }
+
+        .btn-quaternary:hover {
+            background-color: #7b1fa2;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            /* Estilos para tablets e dispositivos menores */
+            main {
+                padding: 1em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            /* Estilos para celulares e dispositivos pequenos */
+            main {
+                padding: 0.5em;
+            }
+
+            section {
+                padding: 1em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Importância de Anotar Tarefas</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="formulario.html">Adicionar Tarefa</a>
+            <a href="visualizar_tarefas.php">Visualizar Tarefas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Organização de Tarefas com Post-it</h2>
+            <p>Anotar suas tarefas diárias em post-its é uma prática eficaz para manter a organização e produtividade. Aqui estão algumas dicas:</p>
+            <ul>
+                <li>Utilize cores diferentes para categorizar suas tarefas.</li>
+                <li>Coloque post-its em uma área visível para não esquecer as tarefas importantes.</li>
+                <li>Mantenha post-its menores com tarefas rápidas ou lembretes.</li>
+            </ul>
+            <h3>Exemplo de Organização</h3>
+            <img src="postit.jpg" alt="Exemplo de Organização com Post-its">
+        </section>
+        <section>
+            <h2>Vídeo Explicativo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EJhhd65ySa4?si=zPHovmX0UZ3ztTwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+        </section>
+    </main>
+    <footer>
+        <p id="data-atual">&copy; 2024 Gerenciador de Tarefas</p>
+        <button class="btn btn-secondary" onclick="trocaCorFundo('#008CBA')">Azul</button>
+        <button class="btn btn-tertiary" onclick="trocaCorFundo('#f44336')">Vermelho</button>
+        <button class="btn btn-quaternary" onclick="trocaCorFundo('#9c27b0')">Roxo</button>
+        <button class="btn" onclick="trocaCorFundo('#fff')">Branco</button>
+        <button class="btn" onclick="trocaCorFundo('#f4f4f9')">Cinza Claro</button>
+        <button class="btn" onclick="scrollToTop()">Ir para o Topo</button>
+    </footer>
+    <script src="js/script.js" defer></script>
+    <script>
+        // Função para mostrar a data atual no rodapé
+        function mostraDataAtual() {
+            var dataAtual = new Date();
+            var ano = dataAtual.getFullYear();
+            var mes = pad(dataAtual.getMonth() + 1); 
+            var dia = pad(dataAtual.getDate());
+            var dataFormatada = `${dia}/${mes}/${ano}`;
+            document.getElementById('data-atual').textContent += ' - ' + dataFormatada;
+        }
+
+        // Função auxiliar para formatar números menores que 10 com zero à esquerda
+        function pad(numero) {
+            return numero < 10 ? '0' + numero : numero;
+        }
+
+        // Função para trocar a cor de fundo da página
+        function trocaCorFundo(cor) {
+            document.body.style.backgroundColor = cor;
+        }
+
+        // Função para rolar suavemente para o topo da página
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Chamando a função para mostrar a data atual quando a página carregar
+        mostraDataAtual();
+    </script>
+</body>
+</html>
